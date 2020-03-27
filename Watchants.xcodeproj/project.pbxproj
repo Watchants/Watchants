@@ -1,0 +1,825 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		60413217243E25FD00929ED7 /* WAArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 60413215243E25FD00929ED7 /* WAArray.h */; };
+		60413218243E25FD00929ED7 /* WAArray.mm in Sources */ = {isa = PBXBuildFile; fileRef = 60413216243E25FD00929ED7 /* WAArray.mm */; };
+		6041321B243E262300929ED7 /* _WATypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 60413219243E262300929ED7 /* _WATypes.h */; };
+		6041321F243E264400929ED7 /* WAKeyArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 6041321D243E264400929ED7 /* WAKeyArray.h */; };
+		60413220243E264400929ED7 /* WAKeyArray.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6041321E243E264400929ED7 /* WAKeyArray.mm */; };
+		60413223243E265F00929ED7 /* WAHashMap.h in Headers */ = {isa = PBXBuildFile; fileRef = 60413221243E265F00929ED7 /* WAHashMap.h */; };
+		60413224243E265F00929ED7 /* WAHashMap.mm in Sources */ = {isa = PBXBuildFile; fileRef = 60413222243E265F00929ED7 /* WAHashMap.mm */; };
+		60413228243E289E00929ED7 /* WAFileManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 60413226243E289E00929ED7 /* WAFileManager.h */; };
+		60413229243E289E00929ED7 /* WAFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 60413227243E289E00929ED7 /* WAFileManager.m */; };
+		6041322D243E28EA00929ED7 /* WATime.h in Headers */ = {isa = PBXBuildFile; fileRef = 6041322B243E28EA00929ED7 /* WATime.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6041322E243E28EA00929ED7 /* WATime.m in Sources */ = {isa = PBXBuildFile; fileRef = 6041322C243E28EA00929ED7 /* WATime.m */; };
+		60413232243E29D300929ED7 /* WAStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 60413230243E29D300929ED7 /* WAStream.h */; };
+		60413233243E29D300929ED7 /* WAStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 60413231243E29D300929ED7 /* WAStream.m */; };
+		60413238243E2A9500929ED7 /* WALog.h in Headers */ = {isa = PBXBuildFile; fileRef = 60413236243E2A9500929ED7 /* WALog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		60413239243E2A9500929ED7 /* WALog.m in Sources */ = {isa = PBXBuildFile; fileRef = 60413237243E2A9500929ED7 /* WALog.m */; };
+		6041323C243E2B3600929ED7 /* WATypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 6041323A243E2B3600929ED7 /* WATypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		60413241243E2DAD00929ED7 /* WARunLoop.h in Headers */ = {isa = PBXBuildFile; fileRef = 6041323F243E2DAD00929ED7 /* WARunLoop.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		60413242243E2DAD00929ED7 /* WARunLoop.m in Sources */ = {isa = PBXBuildFile; fileRef = 60413240243E2DAD00929ED7 /* WARunLoop.m */; };
+		6041324C243E2E9900929ED7 /* WAContextsApp.m in Sources */ = {isa = PBXBuildFile; fileRef = 60413244243E2E9900929ED7 /* WAContextsApp.m */; };
+		6041324D243E2E9900929ED7 /* WAContextsSystem.h in Headers */ = {isa = PBXBuildFile; fileRef = 60413245243E2E9900929ED7 /* WAContextsSystem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6041324E243E2E9900929ED7 /* WAContextsDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 60413246243E2E9900929ED7 /* WAContextsDevice.m */; };
+		6041324F243E2E9900929ED7 /* WAContexts.h in Headers */ = {isa = PBXBuildFile; fileRef = 60413247243E2E9900929ED7 /* WAContexts.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		60413250243E2E9900929ED7 /* WAContextsSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 60413248243E2E9900929ED7 /* WAContextsSystem.m */; };
+		60413251243E2E9900929ED7 /* WAContextsApp.h in Headers */ = {isa = PBXBuildFile; fileRef = 60413249243E2E9900929ED7 /* WAContextsApp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		60413252243E2E9900929ED7 /* WAContextsDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 6041324A243E2E9900929ED7 /* WAContextsDevice.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		60413253243E2E9900929ED7 /* WAContexts.m in Sources */ = {isa = PBXBuildFile; fileRef = 6041324B243E2E9900929ED7 /* WAContexts.m */; };
+		60413257243E2F0E00929ED7 /* WAMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 60413255243E2F0E00929ED7 /* WAMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		60413258243E2F0E00929ED7 /* WAMessage.mm in Sources */ = {isa = PBXBuildFile; fileRef = 60413256243E2F0E00929ED7 /* WAMessage.mm */; };
+		6041325D243E305800929ED7 /* WAMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = 6041325B243E305800929ED7 /* WAMonitor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6041325E243E305800929ED7 /* WAMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6041325C243E305800929ED7 /* WAMonitor.m */; };
+		60413268243E34AC00929ED7 /* _WAMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = 60413267243E34AC00929ED7 /* _WAMonitor.h */; };
+		60490278242E51360022F6F3 /* Watchants.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60490261242E50830022F6F3 /* Watchants.framework */; };
+		60490290242E52360022F6F3 /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6049028F242E52320022F6F3 /* Tests.m */; };
+		60D3F01C242E5B27007C10FD /* Watchants.h in Headers */ = {isa = PBXBuildFile; fileRef = 60D3F01A242E5B27007C10FD /* Watchants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		60490279242E51360022F6F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 60490248242E504F0022F6F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 60490260242E50830022F6F3;
+			remoteInfo = "Watchants iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		60A0C9332430B02300FAC693 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		60413215243E25FD00929ED7 /* WAArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WAArray.h; sourceTree = "<group>"; };
+		60413216243E25FD00929ED7 /* WAArray.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = WAArray.mm; sourceTree = "<group>"; };
+		60413219243E262300929ED7 /* _WATypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _WATypes.h; sourceTree = "<group>"; };
+		6041321D243E264400929ED7 /* WAKeyArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WAKeyArray.h; sourceTree = "<group>"; };
+		6041321E243E264400929ED7 /* WAKeyArray.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = WAKeyArray.mm; sourceTree = "<group>"; };
+		60413221243E265F00929ED7 /* WAHashMap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WAHashMap.h; sourceTree = "<group>"; };
+		60413222243E265F00929ED7 /* WAHashMap.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = WAHashMap.mm; sourceTree = "<group>"; };
+		60413226243E289E00929ED7 /* WAFileManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WAFileManager.h; sourceTree = "<group>"; };
+		60413227243E289E00929ED7 /* WAFileManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WAFileManager.m; sourceTree = "<group>"; };
+		6041322B243E28EA00929ED7 /* WATime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WATime.h; sourceTree = "<group>"; };
+		6041322C243E28EA00929ED7 /* WATime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WATime.m; sourceTree = "<group>"; };
+		60413230243E29D300929ED7 /* WAStream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WAStream.h; sourceTree = "<group>"; };
+		60413231243E29D300929ED7 /* WAStream.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WAStream.m; sourceTree = "<group>"; };
+		60413236243E2A9500929ED7 /* WALog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WALog.h; sourceTree = "<group>"; };
+		60413237243E2A9500929ED7 /* WALog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WALog.m; sourceTree = "<group>"; };
+		6041323A243E2B3600929ED7 /* WATypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WATypes.h; sourceTree = "<group>"; };
+		6041323F243E2DAD00929ED7 /* WARunLoop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WARunLoop.h; sourceTree = "<group>"; };
+		60413240243E2DAD00929ED7 /* WARunLoop.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WARunLoop.m; sourceTree = "<group>"; };
+		60413244243E2E9900929ED7 /* WAContextsApp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WAContextsApp.m; sourceTree = "<group>"; };
+		60413245243E2E9900929ED7 /* WAContextsSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WAContextsSystem.h; sourceTree = "<group>"; };
+		60413246243E2E9900929ED7 /* WAContextsDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WAContextsDevice.m; sourceTree = "<group>"; };
+		60413247243E2E9900929ED7 /* WAContexts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WAContexts.h; sourceTree = "<group>"; };
+		60413248243E2E9900929ED7 /* WAContextsSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WAContextsSystem.m; sourceTree = "<group>"; };
+		60413249243E2E9900929ED7 /* WAContextsApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WAContextsApp.h; sourceTree = "<group>"; };
+		6041324A243E2E9900929ED7 /* WAContextsDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WAContextsDevice.h; sourceTree = "<group>"; };
+		6041324B243E2E9900929ED7 /* WAContexts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WAContexts.m; sourceTree = "<group>"; };
+		60413255243E2F0E00929ED7 /* WAMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WAMessage.h; sourceTree = "<group>"; };
+		60413256243E2F0E00929ED7 /* WAMessage.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = WAMessage.mm; sourceTree = "<group>"; };
+		6041325B243E305800929ED7 /* WAMonitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WAMonitor.h; sourceTree = "<group>"; };
+		6041325C243E305800929ED7 /* WAMonitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WAMonitor.m; sourceTree = "<group>"; };
+		60413267243E34AC00929ED7 /* _WAMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _WAMonitor.h; sourceTree = "<group>"; };
+		60490261242E50830022F6F3 /* Watchants.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Watchants.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6049026C242E50A90022F6F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60490273242E51360022F6F3 /* WatchantsTests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WatchantsTests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6049028C242E522A0022F6F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6049028F242E52320022F6F3 /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
+		60D3F01A242E5B27007C10FD /* Watchants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Watchants.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6049025E242E50830022F6F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60490270242E51360022F6F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60490278242E51360022F6F3 /* Watchants.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		60413213243E25CC00929ED7 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				60413219243E262300929ED7 /* _WATypes.h */,
+				60413267243E34AC00929ED7 /* _WAMonitor.h */,
+				6041322F243E29C900929ED7 /* Stream */,
+				60413214243E25E800929ED7 /* Container */,
+				60413225243E289400929ED7 /* FileManager */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		60413214243E25E800929ED7 /* Container */ = {
+			isa = PBXGroup;
+			children = (
+				60413215243E25FD00929ED7 /* WAArray.h */,
+				60413216243E25FD00929ED7 /* WAArray.mm */,
+				6041321D243E264400929ED7 /* WAKeyArray.h */,
+				6041321E243E264400929ED7 /* WAKeyArray.mm */,
+				60413221243E265F00929ED7 /* WAHashMap.h */,
+				60413222243E265F00929ED7 /* WAHashMap.mm */,
+			);
+			path = Container;
+			sourceTree = "<group>";
+		};
+		60413225243E289400929ED7 /* FileManager */ = {
+			isa = PBXGroup;
+			children = (
+				60413226243E289E00929ED7 /* WAFileManager.h */,
+				60413227243E289E00929ED7 /* WAFileManager.m */,
+			);
+			path = FileManager;
+			sourceTree = "<group>";
+		};
+		6041322A243E28DF00929ED7 /* Time */ = {
+			isa = PBXGroup;
+			children = (
+				6041322B243E28EA00929ED7 /* WATime.h */,
+				6041322C243E28EA00929ED7 /* WATime.m */,
+			);
+			path = Time;
+			sourceTree = "<group>";
+		};
+		6041322F243E29C900929ED7 /* Stream */ = {
+			isa = PBXGroup;
+			children = (
+				60413230243E29D300929ED7 /* WAStream.h */,
+				60413231243E29D300929ED7 /* WAStream.m */,
+			);
+			path = Stream;
+			sourceTree = "<group>";
+		};
+		60413234243E2A8300929ED7 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				6041323A243E2B3600929ED7 /* WATypes.h */,
+				60413235243E2A8D00929ED7 /* Log */,
+				6041322A243E28DF00929ED7 /* Time */,
+				6041325A243E304600929ED7 /* Monitor */,
+				6041323E243E2D9A00929ED7 /* RunLoop */,
+				60413254243E2EFA00929ED7 /* Message */,
+				60413243243E2E9900929ED7 /* Contexts */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		60413235243E2A8D00929ED7 /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				60413236243E2A9500929ED7 /* WALog.h */,
+				60413237243E2A9500929ED7 /* WALog.m */,
+			);
+			path = Log;
+			sourceTree = "<group>";
+		};
+		6041323E243E2D9A00929ED7 /* RunLoop */ = {
+			isa = PBXGroup;
+			children = (
+				6041323F243E2DAD00929ED7 /* WARunLoop.h */,
+				60413240243E2DAD00929ED7 /* WARunLoop.m */,
+			);
+			path = RunLoop;
+			sourceTree = "<group>";
+		};
+		60413243243E2E9900929ED7 /* Contexts */ = {
+			isa = PBXGroup;
+			children = (
+				60413247243E2E9900929ED7 /* WAContexts.h */,
+				6041324B243E2E9900929ED7 /* WAContexts.m */,
+				60413249243E2E9900929ED7 /* WAContextsApp.h */,
+				60413244243E2E9900929ED7 /* WAContextsApp.m */,
+				6041324A243E2E9900929ED7 /* WAContextsDevice.h */,
+				60413246243E2E9900929ED7 /* WAContextsDevice.m */,
+				60413245243E2E9900929ED7 /* WAContextsSystem.h */,
+				60413248243E2E9900929ED7 /* WAContextsSystem.m */,
+			);
+			path = Contexts;
+			sourceTree = "<group>";
+		};
+		60413254243E2EFA00929ED7 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				60413255243E2F0E00929ED7 /* WAMessage.h */,
+				60413256243E2F0E00929ED7 /* WAMessage.mm */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		6041325A243E304600929ED7 /* Monitor */ = {
+			isa = PBXGroup;
+			children = (
+				6041325B243E305800929ED7 /* WAMonitor.h */,
+				6041325C243E305800929ED7 /* WAMonitor.m */,
+			);
+			path = Monitor;
+			sourceTree = "<group>";
+		};
+		60490247242E504F0022F6F3 = {
+			isa = PBXGroup;
+			children = (
+				60490269242E50A90022F6F3 /* Sources */,
+				60490283242E51A00022F6F3 /* Tests */,
+				60490254242E50760022F6F3 /* Products */,
+				60A0C92E2430B02300FAC693 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		60490254242E50760022F6F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				60490261242E50830022F6F3 /* Watchants.framework */,
+				60490273242E51360022F6F3 /* WatchantsTests iOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		60490269242E50A90022F6F3 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				6049026A242E50A90022F6F3 /* Watchants */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		6049026A242E50A90022F6F3 /* Watchants */ = {
+			isa = PBXGroup;
+			children = (
+				60D3F01A242E5B27007C10FD /* Watchants.h */,
+				60413234243E2A8300929ED7 /* Modules */,
+				60413213243E25CC00929ED7 /* Tools */,
+				6049026D242E50B20022F6F3 /* Supporting Files */,
+			);
+			path = Watchants;
+			sourceTree = "<group>";
+		};
+		6049026D242E50B20022F6F3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6049026C242E50A90022F6F3 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		60490283242E51A00022F6F3 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				6049028D242E52320022F6F3 /* WatchantsTests */,
+				6049028A242E51D40022F6F3 /* Supporting Files */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		6049028A242E51D40022F6F3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6049028C242E522A0022F6F3 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6049028D242E52320022F6F3 /* WatchantsTests */ = {
+			isa = PBXGroup;
+			children = (
+				6049028E242E52320022F6F3 /* iOS */,
+			);
+			path = WatchantsTests;
+			sourceTree = "<group>";
+		};
+		6049028E242E52320022F6F3 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6049028F242E52320022F6F3 /* Tests.m */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		60A0C92E2430B02300FAC693 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6049025C242E50830022F6F3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60413217243E25FD00929ED7 /* WAArray.h in Headers */,
+				6041324F243E2E9900929ED7 /* WAContexts.h in Headers */,
+				60D3F01C242E5B27007C10FD /* Watchants.h in Headers */,
+				60413228243E289E00929ED7 /* WAFileManager.h in Headers */,
+				60413251243E2E9900929ED7 /* WAContextsApp.h in Headers */,
+				60413268243E34AC00929ED7 /* _WAMonitor.h in Headers */,
+				60413238243E2A9500929ED7 /* WALog.h in Headers */,
+				6041325D243E305800929ED7 /* WAMonitor.h in Headers */,
+				6041321F243E264400929ED7 /* WAKeyArray.h in Headers */,
+				60413232243E29D300929ED7 /* WAStream.h in Headers */,
+				60413241243E2DAD00929ED7 /* WARunLoop.h in Headers */,
+				6041323C243E2B3600929ED7 /* WATypes.h in Headers */,
+				60413252243E2E9900929ED7 /* WAContextsDevice.h in Headers */,
+				60413223243E265F00929ED7 /* WAHashMap.h in Headers */,
+				6041324D243E2E9900929ED7 /* WAContextsSystem.h in Headers */,
+				6041322D243E28EA00929ED7 /* WATime.h in Headers */,
+				60413257243E2F0E00929ED7 /* WAMessage.h in Headers */,
+				6041321B243E262300929ED7 /* _WATypes.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		60490260242E50830022F6F3 /* Watchants iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60490266242E50830022F6F3 /* Build configuration list for PBXNativeTarget "Watchants iOS" */;
+			buildPhases = (
+				6049025C242E50830022F6F3 /* Headers */,
+				6049025D242E50830022F6F3 /* Sources */,
+				6049025E242E50830022F6F3 /* Frameworks */,
+				6049025F242E50830022F6F3 /* Resources */,
+				60A0C9332430B02300FAC693 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Watchants iOS";
+			productName = "Watchants iOS";
+			productReference = 60490261242E50830022F6F3 /* Watchants.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		60490272242E51360022F6F3 /* WatchantsTests iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6049027B242E51360022F6F3 /* Build configuration list for PBXNativeTarget "WatchantsTests iOS" */;
+			buildPhases = (
+				6049026F242E51360022F6F3 /* Sources */,
+				60490270242E51360022F6F3 /* Frameworks */,
+				60490271242E51360022F6F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6049027A242E51360022F6F3 /* PBXTargetDependency */,
+			);
+			name = "WatchantsTests iOS";
+			productName = "WatchantsTests iOS";
+			productReference = 60490273242E51360022F6F3 /* WatchantsTests iOS.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		60490248242E504F0022F6F3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1140;
+				TargetAttributes = {
+					60490260242E50830022F6F3 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					60490272242E51360022F6F3 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+				};
+			};
+			buildConfigurationList = 6049024B242E504F0022F6F3 /* Build configuration list for PBXProject "Watchants" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 60490247242E504F0022F6F3;
+			productRefGroup = 60490254242E50760022F6F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				60490260242E50830022F6F3 /* Watchants iOS */,
+				60490272242E51360022F6F3 /* WatchantsTests iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6049025F242E50830022F6F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60490271242E51360022F6F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6049025D242E50830022F6F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60413218243E25FD00929ED7 /* WAArray.mm in Sources */,
+				60413229243E289E00929ED7 /* WAFileManager.m in Sources */,
+				6041325E243E305800929ED7 /* WAMonitor.m in Sources */,
+				6041324C243E2E9900929ED7 /* WAContextsApp.m in Sources */,
+				60413239243E2A9500929ED7 /* WALog.m in Sources */,
+				60413220243E264400929ED7 /* WAKeyArray.mm in Sources */,
+				6041324E243E2E9900929ED7 /* WAContextsDevice.m in Sources */,
+				6041322E243E28EA00929ED7 /* WATime.m in Sources */,
+				60413250243E2E9900929ED7 /* WAContextsSystem.m in Sources */,
+				60413242243E2DAD00929ED7 /* WARunLoop.m in Sources */,
+				60413224243E265F00929ED7 /* WAHashMap.mm in Sources */,
+				60413233243E29D300929ED7 /* WAStream.m in Sources */,
+				60413258243E2F0E00929ED7 /* WAMessage.mm in Sources */,
+				60413253243E2E9900929ED7 /* WAContexts.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6049026F242E51360022F6F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60490290242E52360022F6F3 /* Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6049027A242E51360022F6F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 60490260242E50830022F6F3 /* Watchants iOS */;
+			targetProxy = 60490279242E51360022F6F3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6049024C242E504F0022F6F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		6049024D242E504F0022F6F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		60490267242E50830022F6F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = JLXC3L42Z2;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Watchants/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.panghu.Watchants-iOS";
+				PRODUCT_NAME = Watchants;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		60490268242E50830022F6F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = JLXC3L42Z2;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Watchants/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.panghu.Watchants-iOS";
+				PRODUCT_NAME = Watchants;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6049027C242E51360022F6F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = JLXC3L42Z2;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.panghu.WatchantsTests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6049027D242E51360022F6F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = JLXC3L42Z2;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.panghu.WatchantsTests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6049024B242E504F0022F6F3 /* Build configuration list for PBXProject "Watchants" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6049024C242E504F0022F6F3 /* Debug */,
+				6049024D242E504F0022F6F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60490266242E50830022F6F3 /* Build configuration list for PBXNativeTarget "Watchants iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60490267242E50830022F6F3 /* Debug */,
+				60490268242E50830022F6F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6049027B242E51360022F6F3 /* Build configuration list for PBXNativeTarget "WatchantsTests iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6049027C242E51360022F6F3 /* Debug */,
+				6049027D242E51360022F6F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 60490248242E504F0022F6F3 /* Project object */;
+}
